@@ -13,7 +13,7 @@ public class ProximityVoiceTrigger : VoiceComponent
     private List<byte> groupsToAdd = new List<byte>();
     private List<byte> groupsToRemove = new List<byte>();
 
-    [SerializeField] // TODO: make it readonly
+    [SerializeField] 
     private byte[] subscribedGroups;
 
     private PhotonVoiceView photonVoiceView;
