@@ -8,6 +8,8 @@
 
 🎞️Wireframe: [here](https://www.figma.com/file/0uZ9fWix305nHAks71Jhqw/SpaceWalk?t=yRBmgJmUx3mhrGwR-1)
 
+👁️‍🗨️Input categories: [here](https://docs.google.com/document/d/1rIuicyoIzX5mJZrxq9CMlwStGXY29m1P8uYgBqBlIRU/edit)
+
 🚀 Team:
 - Butescu Cristian
 - Galan Silviu Marian
