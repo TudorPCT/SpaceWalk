@@ -528,20 +528,20 @@ MonoBehaviour:
   head:
     vrTarget: {fileID: 7981042625334873030}
     rigTarget: {fileID: 1263325307}
-    trackingPositionOffset: {x: 0, y: 0, z: 0}
-    trackingRotationOffset: {x: 0, y: 0, z: 0}
+    trackingPositionOffset: {x: 0, y: -0.23, z: -0.18}
+    trackingRotationOffset: {x: 180, y: 90, z: 90}
   leftHand:
     vrTarget: {fileID: 6703913185337049486}
     rigTarget: {fileID: 1142711410}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
-    trackingRotationOffset: {x: 0, y: 0, z: 0}
+    trackingRotationOffset: {x: -90, y: 90, z: 0}
   rightHand:
     vrTarget: {fileID: 2042105086712016543}
     rigTarget: {fileID: 6536635374371246128}
     trackingPositionOffset: {x: 0, y: 0, z: 0}
     trackingRotationOffset: {x: 0, y: 0, z: 0}
   headConstraint: {fileID: 1263325307}
-  headBodyOffset: {x: 0, y: 0, z: 0}
+  headBodyOffset: {x: 90, y: -90, z: 0}
 --- !u!114 &2797683184256680227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3697,8 +3697,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7981042625334873030}
   - component: {fileID: 8887028879785381359}
-  - component: {fileID: 4386325237996421110}
   - component: {fileID: 2562768341915084818}
+  - component: {fileID: 616818794821434374}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3764,14 +3764,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &4386325237996421110
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9209590156637098808}
-  m_Enabled: 1
 --- !u!114 &2562768341915084818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3789,7 +3781,7 @@ MonoBehaviour:
   m_PositionInput:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Position Input
       m_Type: 0
       m_ExpectedControlType: 
       m_Id: bd43562f-ecf1-44e9-99ba-4ce401fe99db
@@ -3801,7 +3793,7 @@ MonoBehaviour:
   m_RotationInput:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Rotation Input
       m_Type: 0
       m_ExpectedControlType: 
       m_Id: 495466ae-b1f6-4251-96c5-3ea4c26bc441
@@ -3829,6 +3821,14 @@ MonoBehaviour:
     m_SingletonActionBindings: []
     m_Flags: 0
   m_HasMigratedActions: 1
+--- !u!81 &616818794821434374
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9209590156637098808}
+  m_Enabled: 1
 --- !u!1001 &4502594929628685725
 PrefabInstance:
   m_ObjectHideFlags: 0
