@@ -26,13 +26,6 @@ namespace com.unity.photon
             {
                 LocalPlayerInstance = this.gameObject;
             }
-            else
-            { 
-                var camera = this.gameObject.GetComponentInChildren<Camera>();
-                Debug.Log("sunt in else ");
-                Debug.Log(camera);
-                camera.enabled = false;
-            }
             // #Critical
             // we flag as don't destroy on load so that instance survives level synchronization, thus giving a seamless experience when levels load.
             DontDestroyOnLoad(this.gameObject);
@@ -41,7 +34,6 @@ namespace com.unity.photon
         void Start()
         {
             Debug.Log("added new player");
-
         }
 
         void Update()
