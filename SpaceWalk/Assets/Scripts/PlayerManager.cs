@@ -1,4 +1,5 @@
 using Photon.Pun;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 
 namespace com.unity.photon
@@ -25,6 +26,8 @@ namespace com.unity.photon
             if (photonView.IsMine)
             {
                 LocalPlayerInstance = this.gameObject;
+                var localXROrigin = LocalPlayerInstance.GetComponentInChildren<XROrigin>(includeInactive: true);
+                localXROrigin.gameObject.SetActive(true);
             }
             // #Critical
             // we flag as don't destroy on load so that instance survives level synchronization, thus giving a seamless experience when levels load.

@@ -11,12 +11,9 @@ public class PlanetManager : MonoBehaviourPunCallbacks
     void Start()
     {
         Instance = this;
-        if (PlayerManager.LocalPlayerInstance == null && PhotonNetwork.IsMasterClient)
+        if (PlayerManager.LocalPlayerInstance == null)
         {
             PhotonNetwork.Instantiate(_character.name, _spawn.transform.position, Quaternion.identity, 0);
-        }
-        else
-        {
         }
     }
     public override void OnPlayerEnteredRoom(Player other)
