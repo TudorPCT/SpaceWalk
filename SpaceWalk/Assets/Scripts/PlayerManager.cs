@@ -12,7 +12,7 @@ namespace com.unity.photon
 
         [Tooltip("The local player instance. Use this to know if the local player is represented in the Scene")]
         public static GameObject LocalPlayerInstance;
-        
+
         #endregion
 
 
@@ -26,9 +26,6 @@ namespace com.unity.photon
             if (photonView.IsMine)
             {
                 LocalPlayerInstance = this.gameObject;
-/*                var localXROrigin = LocalPlayerInstance.GetComponentInChildren<XROrigin>(includeInactive: true);
-                localXROrigin.gameObject.SetActive(true);*/
-
                 Transform player = LocalPlayerInstance.transform;
                 Transform child = player.Find("XRSetup");
                 if (child != null)
