@@ -12,7 +12,7 @@ namespace com.unity.photon
 
         [Tooltip("The local player instance. Use this to know if the local player is represented in the Scene")]
         public static GameObject LocalPlayerInstance;
-
+        
         #endregion
 
 
@@ -26,8 +26,15 @@ namespace com.unity.photon
             if (photonView.IsMine)
             {
                 LocalPlayerInstance = this.gameObject;
-                var localXROrigin = LocalPlayerInstance.GetComponentInChildren<XROrigin>(includeInactive: true);
-                localXROrigin.gameObject.SetActive(true);
+/*                var localXROrigin = LocalPlayerInstance.GetComponentInChildren<XROrigin>(includeInactive: true);
+                localXROrigin.gameObject.SetActive(true);*/
+
+                Transform player = LocalPlayerInstance.transform;
+                Transform child = player.Find("XRSetup");
+                if (child != null)
+                {
+                    child.gameObject.SetActive(true);
+                }
             }
             // #Critical
             // we flag as don't destroy on load so that instance survives level synchronization, thus giving a seamless experience when levels load.
