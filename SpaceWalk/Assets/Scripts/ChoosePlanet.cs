@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ChoosePlanet : MonoBehaviour
 {
+    public GameObject MainCamera;
     public GameObject VisitButton;
     public TMP_Dropdown dropdown;
     public static string _selectedOption;
@@ -32,5 +33,8 @@ public class ChoosePlanet : MonoBehaviour
             Debug.Log($"Scene with name {_selectedOption} does not exist.");
             VisitButton.SetActive(false);
         }
+        var obj = GameObject.Find($"{_selectedOption}View");
+        MainCamera.transform.position = obj.transform.position;
+        MainCamera.transform.rotation = obj.transform.rotation;
     }
 }
