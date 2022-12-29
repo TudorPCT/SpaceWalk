@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ebeb574e482674b9a231c7e1479f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 61200
+  speed: 6120
   angularVelocity: 0.005882353
   direction: {x: 0, y: 0, z: 1}
 --- !u!1 &141477346
@@ -357,7 +357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ebeb574e482674b9a231c7e1479f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2332800
+  speed: 233280
   angularVelocity: 0.000154321
   direction: {x: 0, y: 0, z: 1}
 --- !u!1001 &336597700
@@ -523,7 +523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ebeb574e482674b9a231c7e1479f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 57600
+  speed: 5760
   angularVelocity: 0.00625
   direction: {x: 0, y: 0, z: 1}
 --- !u!1 &449561356 stripped
@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ebeb574e482674b9a231c7e1479f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2332800
+  speed: 233280
   angularVelocity: 0.000154321
   direction: {x: 0, y: 0, z: 1}
 --- !u!1001 &540861424
@@ -800,7 +800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ebeb574e482674b9a231c7e1479f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5068800
+  speed: 506880
   angularVelocity: 0.000071022725
   direction: {x: 0, y: 0, z: 1}
 --- !u!1 &643070428
@@ -1904,7 +1904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ebeb574e482674b9a231c7e1479f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 88560
+  speed: 8856
   angularVelocity: 0.004065042
   direction: {x: 0, y: 0, z: 1}
 --- !u!1 &1411616717
@@ -2179,7 +2179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ebeb574e482674b9a231c7e1479f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20995200
+  speed: 2099520
   angularVelocity: 0.000017146776
   direction: {x: 0, y: 0, z: -1}
 --- !u!1 &1564548389
@@ -2221,7 +2221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -89.4, y: -73}
+  m_AnchoredPosition: {x: -89.399994, y: -73}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1564548391
@@ -2806,7 +2806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ebeb574e482674b9a231c7e1479f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 36000
+  speed: 3600
   angularVelocity: 0.01
   direction: {x: 0, y: 0, z: 1}
 --- !u!1 &1845849731
@@ -3142,7 +3142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09ebeb574e482674b9a231c7e1479f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 86400
+  speed: 8640
   angularVelocity: 0.004166667
   direction: {x: 0, y: 0, z: 1}
 --- !u!1 &2032923556
