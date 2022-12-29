@@ -23,8 +23,6 @@ public class PlayerNameInputField : MonoBehaviour
     /// </summary>
     void Start()
     {
-
-
         string defaultName = string.Empty;
         TMP_InputField _inputField = this.GetComponent<TMP_InputField>();
         if (_inputField != null)
@@ -35,7 +33,6 @@ public class PlayerNameInputField : MonoBehaviour
                 _inputField.text = defaultName;
             }
         }
-
 
         PhotonNetwork.NickName = defaultName;
     }

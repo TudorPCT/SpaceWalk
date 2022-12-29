@@ -7,10 +7,10 @@ public class ChoosePlanet : MonoBehaviour
 {
     public GameObject VisitButton;
     public TMP_Dropdown dropdown;
-    private string _selectedOption;
+    public static string _selectedOption;
     void Start()
     {
-
+        Choose();
     }
 
     void Update()
@@ -32,10 +32,5 @@ public class ChoosePlanet : MonoBehaviour
             Debug.Log($"Scene with name {_selectedOption} does not exist.");
             VisitButton.SetActive(false);
         }
-    }
-
-    public void Visit()
-    {
-        PhotonNetwork.LoadLevel(_selectedOption);
     }
 }
