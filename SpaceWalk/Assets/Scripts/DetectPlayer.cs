@@ -5,18 +5,18 @@ using UnityEngine;
 public class DetectPlayer : MonoBehaviour
 {
     public GameObject canvas;
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.gameObject.name);
-        if (other.gameObject.name.Contains("Robot"))
+        if (other.gameObject.name.Contains("Proximity Voice Chat"))
         {
             canvas.SetActive(true);
         }
     }
 
-    void OnCollisionExit(Collision other)
+    void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.name.Contains("Robot"))
+        if (other.gameObject.name.Contains("Proximity Voice Chat"))
         {
             canvas.SetActive(false);
         }
