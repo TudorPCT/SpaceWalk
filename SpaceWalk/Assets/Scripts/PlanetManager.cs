@@ -8,8 +8,10 @@ public class PlanetManager : MonoBehaviourPunCallbacks
     public GameObject _character;
     public GameObject _spawn;
     public static PlanetManager Instance;
+    public float gravity;
     void Start()
     {
+        Physics.gravity = new Vector3(0, gravity, 0);
         Instance = this;
         if (PlayerManager.LocalPlayerInstance == null)
         {
