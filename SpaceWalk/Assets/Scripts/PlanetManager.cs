@@ -13,10 +13,13 @@ public class PlanetManager : MonoBehaviourPunCallbacks
     {
         Physics.gravity = new Vector3(0, gravity, 0);
         Instance = this;
+
         if (PlayerManager.LocalPlayerInstance == null)
         {
             PhotonNetwork.Instantiate(_character.name, _spawn.transform.position, Quaternion.identity, 0);
         }
+        
+        
     }
     public override void OnPlayerEnteredRoom(Player other)
     {
