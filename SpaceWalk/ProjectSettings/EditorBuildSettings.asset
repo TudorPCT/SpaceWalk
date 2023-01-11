@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mars.unity
     guid: 3bd9555207ae3d04899b59bef81795bc
+  - enabled: 1
+    path: Assets/Scenes/CutScene.unity
+    guid: 049bccbad67b35645ba599db056217fa
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 124a79590477bcf47bbdb5a406723a03, type: 2}
     xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: f05b28427a7339444a55e1742424f2df, type: 2}
