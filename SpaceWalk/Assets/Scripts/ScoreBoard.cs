@@ -41,7 +41,7 @@ public class ScoreBoard : MonoBehaviour
         _entryList.Sort();
         for (int i = 0; i < 10 && i < _entryList.Count; i++)
         {
-            _entryTransformList.Add(CreateScoreEntryTransform(i, _entryList[i]));
+            _entryTransformList.Add(CreateScoreEntryTransform(i+1, _entryList[i]));
         }
     }
 
